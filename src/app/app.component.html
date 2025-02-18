@@ -1,0 +1,9 @@
+<h1>App Component</h1>
+<input type="text" #input>
+
+<div>
+    <div *ngFor="let u of users" style="display: flex;">
+        <img [src]="u.avatar_url" style="width: 200px; height: 200px; margin: 20px;"/>
+        <h3>{{u.login}}</h3>
+    </div>
+</div>
